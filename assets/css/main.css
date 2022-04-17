@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Exo:300,900");
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,900");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #fff;
-		font-family: 'Exo', sans-serif;
+		font-family: 'Dosis', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
 		letter-spacing: -0.025em;
