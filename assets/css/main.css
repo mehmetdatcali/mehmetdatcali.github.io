@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis:300,900");
+@import url("https://fonts.googleapis.com/css?family=Khand:300,700");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #fff;
-		font-family: 'Dosis', sans-serif;
+		font-family: 'Khand', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
 		letter-spacing: -0.025em;
