@@ -1,0 +1,132 @@
+:root {
+  --text: #fff;
+  --border: #143841;
+  --space: 1rem;
+  --radius: 1rem;
+  --border-size: 0.1rem;
+  --max-width: 36rem;
+  --font-main: 'Fira Sans', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  --font-small: 0.8rem;
+  --font-normal: 1rem;
+  --font-large: 1.6rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #071518, #143841, #071518);
+  background-size: 400% 400%;
+  animation: auroraEffect 8s ease-in-out infinite;
+  color: var(--text);
+  font-family: var(--font-main);
+  font-size: var(--font-normal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes auroraEffect {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.main {
+  max-width: var(--max-width);
+  width: 100%;
+  padding: var(--space);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space);
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space);
+}
+
+.profile img {
+  width: 8rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: var(--border-size) solid var(--border);
+}
+
+.profile h1 {
+  font-size: var(--font-large);
+  font-weight: 600;
+}
+
+.about {
+  font-family: var(--font-mono);
+  border: var(--border-size) solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space);
+  margin-block: var(--space);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+}
+
+.about h2, .about p {
+  font-size: var(--font-small);
+  font-weight: 400;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+  width: 100%;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: var(--space);
+  border: var(--border-size) solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  background: transparent;
+  text-decoration: none;
+  font-weight: 400;
+  transition: background 0.4s;
+  justify-content: center;
+}
+
+.link i {
+  position: absolute;
+  left: var(--space);
+  font-size: 1.2rem;
+}
+
+.link span {
+  text-align: center;
+  width: 100%;
+}
+
+.link:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+.hidden {
+  display: none;
+}
+
+.copyright {
+  font-family: var(--font-mono);
+  font-size: var(--font-small);
+  margin-block: var(--space);
+}
